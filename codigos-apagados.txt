@@ -1,0 +1,50 @@
+//Arquivo soma.js
+
+export const soma = (a, b) => {
+  return a + b;
+}
+
+//Aquivo index.js antes de substuição de código
+
+// const soma = (a, b) => {
+//   return a + b;
+// }
+
+import { soma } from './soma'; 
+
+console.log(soma(1, 3));
+
+// App.js
+
+...
+return (
+    <>
+      <Header title="Homepage">
+        <ul>
+          <li>Home</li>
+          <li>Projs</li>
+        </ul>
+      </Header> 
+      <Header title="Projects">
+        <ul>
+          <li>Home</li>
+          <li>Projs</li>
+        </ul>
+      </Header>
+    </>
+
+    // Header.js
+
+    export default function Header({title, children}) {
+  return (
+    <header>
+      <h1>{title}</h1>
+
+      {children}
+    </header>
+  );
+
+  // App.js
+
+  function handleAddProject() {
+    projects.push(`Novo Projeto ${Date.now()}`);
