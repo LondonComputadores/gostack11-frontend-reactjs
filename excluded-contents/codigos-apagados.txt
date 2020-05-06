@@ -48,3 +48,19 @@ return (
 
   function handleAddProject() {
     projects.push(`Novo Projeto ${Date.now()}`);
+
+  // App.js
+
+  function App() {
+  const [projects, setProjects] = useState(['Desenvolvimento de App', 'Front-end web']);
+
+// App.js
+
+import './App.css'; //somente background img was removed
+import backgroundImage from './assets/background.jpg';
+
+ return (
+    <>
+      <Header title="Projects"/>
+
+      <img width={500} src={backgroundImage}/> //só essa linha foi removida
